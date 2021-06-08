@@ -52,7 +52,7 @@ run_me_first;
 ```
 
 <br />
-<br />
+
 
 Execute a demo file
 ----------------------------
@@ -61,10 +61,6 @@ Run `demo`.
 %% Perform a demo.m
 demo; 
 ```
-
-<br />
-
-
 
 <br />
 
