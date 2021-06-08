@@ -1,4 +1,4 @@
-# CI GMVC : 
+# CI GMVC : Consistency-aware and inconsistency-aware graph-based multi-view clustering
 ----------
 
 Authors: [Hiroyuki Kasai](http://kasai.comm.waseda.ac.jp/kasai/) and Mitsuhiko Horie
