@@ -60,8 +60,8 @@ Notes
 -------
 * Some parts of ci_gmvc.m are borrowed from two works below: 
 
-    - Hao Wang, Yan Yang, Bing Liu, Hamido Fujita, "A Study of Graph-based System for Multi-view Clustering," Knowledge-Based Systems, 2019, [Code](https://github.com/cswanghao/gbs)
-    - Youwei Liang, Dong Huang, and Chang-Dong Wang. Consistency Meets, "Inconsistency: A Unified Graph Learning Framework for Multi-view Clustering," IEEE International Conference on Data Mining(ICDM), 2019, [Code](https://github.com/youweiliang/ConsistentGraphLearning)
+    - Hao Wang, Yan Yang, Bing Liu, Hamido Fujita, "A Study of Graph-based System for Multi-view Clustering," Knowledge-Based Systems, 2019, [Code](https://github.com/cswanghao/gbs).
+    - Youwei Liang, Dong Huang, and Chang-Dong Wang. Consistency Meets, "Inconsistency: A Unified Graph Learning Framework for Multi-view Clustering," IEEE International Conference on Data Mining(ICDM), 2019, [Code](https://github.com/youweiliang/ConsistentGraphLearning).
 
 <br />
 
