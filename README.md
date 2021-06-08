@@ -56,9 +56,9 @@ run_me_first;
 
 Execute a demo file
 ----------------------------
-Run `demo`. 
+Run `demo` for a demonstration. 
 ```Matlab
-%% Perform a demo.m
+%% execute demo.m
 demo; 
 ```
 
