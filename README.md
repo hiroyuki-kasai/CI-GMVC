@@ -21,7 +21,7 @@ A new algorithm called CI-GMVC is proposed as a new GMVC method that incorporate
 Paper
 ----------
 
-H. Kasai, "Consistency-aware and inconsistency-aware graph-based multi-view clustering," EUSIPCO 2020. [Publisher's site](https://www.eurasip.org/Proceedings/Eusipco/Eusipco2020/pdfs/0001472.pdf), [arXiv](https://arxiv.org/abs/2011.12532)
+M. Horie and H. Kasai, "Consistency-aware and inconsistency-aware graph-based multi-view clustering," EUSIPCO 2020. [Publisher's site](https://www.eurasip.org/Proceedings/Eusipco/Eusipco2020/pdfs/0001472.pdf), [arXiv](https://arxiv.org/abs/2011.12532)
 
 
 
