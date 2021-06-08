@@ -1,7 +1,7 @@
 # CI GMVC : 
 ----------
 
-Authors: [Hiroyuki Kasai](http://kasai.comm.waseda.ac.jp/kasai/)
+Authors: [Hiroyuki Kasai](http://kasai.comm.waseda.ac.jp/kasai/) and Mitsuhiko Horie
 
 Last page update: June 08, 2021
 
