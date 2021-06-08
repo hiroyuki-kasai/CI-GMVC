@@ -13,7 +13,7 @@ Introduction
 ----------
 Multi-view data analysis has gained increasing popularity because multi-view data are frequently encountered in machine learning applications. A simple but promising approach for clustering of multi-view data is multi-view clustering (MVC), which has been developed extensively to classify given subjects into some clustered groups by learning latent common features that are shared across multi-view data. Among existing approaches, graph-based multi-view clustering (GMVC) achieves state-of-the-art performance by leveraging a shared graph matrix called the unified matrix. However, existing methods including GMVC do not explicitly address inconsistent parts of input graph matrices. Consequently, they are adversely affected by unacceptable clustering performance. 
 
-A new algorithm called CI-GMVC is proposed as a new GMVC method that incorporates consistent and inconsistent parts lying across multiple views. This repository containts the code of CI_GMVC proposed in the following paper:
+A new algorithm called CI-GMVC is proposed as a new GMVC method that incorporates consistent and inconsistent parts lying across multiple views. This repository containts the code of CI-GMVC proposed in the following paper:
 <br />
 
 
