@@ -1,7 +1,7 @@
-# CI GMVC : 
+# SSPW k-means: 
 ----------
 
-Authors: [Hiroyuki Kasai](http://kasai.comm.waseda.ac.jp/kasai/) and Mitsuhiko Horie
+Authors: [Hiroyuki Kasai](http://kasai.comm.waseda.ac.jp/kasai/) and Takumi Fukunaga
 
 Last page update: June 08, 2021
 
@@ -11,9 +11,10 @@ Latest version: 1.0.0 (see Release notes for more info)
 
 Introduction
 ----------
-Multi-view data analysis has gained increasing popularity because multi-view data are frequently encountered in machine learning applications. A simple but promising approach for clustering of multi-view data is multi-view clustering (MVC), which has been developed extensively to classify given subjects into some clustered groups by learning latent common features that are shared across multi-view data. Among existing approaches, graph-based multi-view clustering (GMVC) achieves state-of-the-art performance by leveraging a shared graph matrix called the unified matrix. However, existing methods including GMVC do not explicitly address inconsistent parts of input graph matrices. Consequently, they are adversely affected by unacceptable clustering performance. 
-
-A new algorithm called CI-GMVC is proposed as a new GMVC method that incorporates consistent and inconsistent parts lying across multiple views. This repository contains the code of CI-GMVC proposed in the following paper:
+This repository contains the code of simplex projection based Wasserstein k-means, called SSPW k-means, that is a faster Wasserstein k-means algorithm for histogram 
+data by reducing Wasserstein distance computations and exploiting sparse simplex projection. We shrink data samples, centroids, and the ground cost matrix, which 
+leads to considerable reduction of the computations used to solve optimal transport problems without loss of clustering quality. Furthermore, SSPW k-means dynamically 
+reduced the computational complexity by removing lower-valued data samples and harnessing sparse simplex projection while keeping the degradation of clustering quality lower. 
 <br />
 
 
@@ -22,8 +23,7 @@ A new algorithm called CI-GMVC is proposed as a new GMVC method that incorporate
 Paper
 ----------
 
-M. Horie and H. Kasai, "Consistency-aware and inconsistency-aware graph-based multi-view clustering," EUSIPCO 2020. [Publisher's site](https://www.eurasip.org/Proceedings/Eusipco/Eusipco2020/pdfs/0001472.pdf), [arXiv](https://arxiv.org/abs/2011.12532)
-
+T. Fukunaga and H. Kasai, "Wasserstein k-means with sparse simplex projection," ICPR2020. [Publisher's site](https://ieeexplore.ieee.org/document/9412131), [arXiv](https://arxiv.org/abs/2011.12542).
 
 
 
@@ -36,7 +36,8 @@ Folders and files
 ./                      - Top directory.
 ./README.md             - This readme file.
 ./run_me_first.m        - The scipt that you need to run first.
-./demo.m                - Demonstration script. 
+./demo.m                - A demonstration script. 
+|algorithms             - Contains the implementation file of the proposed SSPW k-means
 |tools                  - Contains some files for execution.
 |datasets               - Contains some datasets.
 </pre>
@@ -51,17 +52,25 @@ Run `run_me_first` for path configurations.
 run_me_first; 
 ```
 
-<br />
+<br />  
+
+Demonstration
+----------------------------
+Run `demo` for a demonstration.
+```Matlab
+%% Execute a demonstration script.
+demo; 
+```
 
 
 <br />
 
 Notes
 -------
-* Some parts of ci_gmvc.m are borrowed from two works below: 
+* Some parts are borrowed from below: 
 
-    - Hao Wang, Yan Yang, Bing Liu, Hamido Fujita, "A Study of Graph-based System for Multi-view Clustering," Knowledge-Based Systems, 2019, [Code](https://github.com/cswanghao/gbs).
-    - Youwei Liang, Dong Huang, and Chang-Dong Wang. Consistency Meets, "Inconsistency: A Unified Graph Learning Framework for Multi-view Clustering," IEEE International Conference on Data Mining(ICDM), 2019, [Code](https://github.com/youweiliang/ConsistentGraphLearning).
+    - Staib, Matthew and Jegelka, Stefanie, "Wasserstein k-means++ for Cloud Regime Histogram Clustering," Proceedings of the Seventh International Workshop on Climate
+Informatics: CI 2017, 2017, [Code](https://github.com/mstaib/cloud-regime-clustering-code).
 
 <br />
 
